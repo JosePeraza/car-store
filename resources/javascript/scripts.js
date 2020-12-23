@@ -48,11 +48,12 @@ const cars = [
 ];
 
 function printCars() {
-    const container = document.getElementById('container-cars');
-    
-    let html = '';
+
+    const tableContainer = document.getElementById('container-cars');
+
+    let tableHtml = '';
     cars.forEach((car) => {
-        html += `<tr>
+        tableHtml += `<tr>
                       <td><div class="container img-max align-items-center"><img class="img-fluid img-thumbnail rounded mx-auto d-block" src="${car.photo}" alt="Car-${car.id}"></div></td>    
                       <td>${car.brand}</td>
                       <td>${car.model}</td>
@@ -65,8 +66,9 @@ function printCars() {
                           </button>
                       </td>
                  </tr>`
-    })
-    container.innerHTML = html;
+    });
+
+    tableContainer.innerHTML = tableHtml;
 }
 function addCar() {
     //Obtener el valor del input

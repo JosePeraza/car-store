@@ -18,3 +18,44 @@ section {
 .form-title {
     text-transform: uppercase;
 }
+
+
+
+.con-npadding {
+    padding: 0px;
+}
+
+.final{
+    border-top: 3px solid  #ff0000;
+    text-align: center;
+    font-size: 24px;
+    padding: 50px 20px;
+    color: #fff;
+    background-color: #111;
+    margin-bottom: 0px;
+}
+
+.main-bg {
+    background-image: url("https://www.nissan.ca/content/dam/Nissan/Canada/homepage/special-offers/versa/NUC_NDC_Q00706_VERSA_CM_DSK_3000x1540_REV.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    background:rgb(0 0 0 / 47%);
+}
+
+.main {
+    padding: 300px 0px;
+    height: 100vh;
+    text-align: center;
+}
+
+.light {
+    color: #fff;
+}
+
+.j-between {
+    justify-content: space-between
+}
