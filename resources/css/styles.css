@@ -1,3 +1,20 @@
 .img-max {
-    max-width: 300px
-  }
+    max-width: 300px;
+}
+
+section {
+    margin: 50px 0px;
+}
+
+.label-form {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.buttom-form {
+    margin-top: 8px;
+}
+
+.form-title {
+    text-transform: uppercase;
+}
