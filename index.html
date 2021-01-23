@@ -46,28 +46,29 @@
     
     <section id="car-adding">
         <div class="container">
-            <form id="form-cars" onsubmit="event.preventDefault(), addCar()" action="/cars.php">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="form-title">Please fill out the following form to sell a new car</h4>
-                        <div class="form-group">
-                            <label class="label-form" for="brand" class="form-label">Brand</label>
-                            <input type="text" placeholder="Car brand" class="form-control" id="brand" aria-describedby="emailHelp">
-                            <label class="label-form" for="model" class="form-label">Model</label>
-                            <input type="text" placeholder="Car model" class="form-control" id="model" aria-describedby="emailHelp">
-                            <label class="label-form" for="year" class="form-label">Year</label>
-                            <input type="text" placeholder="Car year" class="form-control" id="year" aria-describedby="emailHelp">
-                            <label class="label-form" for="color" class="form-label">Color</label>
-                            <input type="text" placeholder="Car color" class="form-control" id="color" aria-describedby="emailHelp">
-                            <label class="label-form" for="price" class="form-label">Price</label>
-                            <input type="text" placeholder="Car price" class="form-control" id="price" aria-describedby="emailHelp">
-                            <label class="label-form" for="photo" class="form-label">Photo</label>
-                            <input type="text" placeholder="Car photo" class="form-control" id="photo" aria-describedby="emailHelp">
-                            <button type="submit" class="btn btn-primary buttom-form">Submit</button>
-                        </div>    
-                    </div>
-                </div>
-            </form>
+          <div class="card">
+            <div class="card-body">
+              <form id="form-cars" onsubmit="event.preventDefault(), addCar()" action="/cars.php">
+                <h4 class="form-title">Please fill out the following form to sell a new car</h4>
+                <div class="form-group">
+                    <label class="label-form" for="brand" class="form-label">Brand</label>
+                    <input type="text" placeholder="Car brand" class="form-control" id="brand" aria-describedby="emailHelp" required>
+                    <label class="label-form" for="model" class="form-label">Model</label>
+                    <input type="text" placeholder="Car model" class="form-control" id="model" aria-describedby="emailHelp" required>
+                    <label class="label-form" for="year" class="form-label">Year</label>
+                    <input type="text" placeholder="Car year" class="form-control" id="year" aria-describedby="emailHelp" required>
+                    <label class="label-form" for="color" class="form-label">Color</label>
+                    <input type="text" placeholder="Car color" class="form-control" id="color" aria-describedby="emailHelp" required>
+                    <label class="label-form" for="price" class="form-label">Price</label>
+                    <input type="text" placeholder="Car price" class="form-control" id="price" aria-describedby="emailHelp" required>
+                    <label class="label-form" for="photo" class="form-label">Photo</label>
+                    <input type="text" placeholder="Car photo" class="form-control" id="photo" aria-describedby="emailHelp" required>
+                    <button type="submit" class="btn btn-primary buttom-form" id="save">Submit</button>
+                    <button onclick="cancelUpdate()" class="btn btn-secondary buttom-form d-none" id="cancel">Cancel</button>
+                </div> 
+              </form>
+            </div>
+          </div>
         </div>
     </section>
     <section id="car-table">
